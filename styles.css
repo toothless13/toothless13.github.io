@@ -1,0 +1,108 @@
+html {
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(183, 45%, 53%);
+    box-sizing: content-box;  
+}
+
+h1,
+h2 {
+    color: hsl(63, 45%, 53%);
+    background-color: hsla(183, 45%, 20%, 0.5);
+    border: 2px solid hsla(183, 45%, 20%, 0.3);
+    width: 75%;
+    text-align: center;
+    margin: 1% auto;
+}
+
+.sub-heading {
+    border: 2px solid hsla(183, 45%, 20%, 0.3);
+    width: 75%;
+    text-align: center;
+    margin: 1% auto;
+    padding: 0;
+    background-color: hsla(183, 45%, 20%, 0.5);
+    color: hsl(63, 45%, 53%);
+}
+
+span.example,
+span.highlight,
+span.syntax {
+    background-color: hsla(65, 19%, 88%, 0.829);
+    border-radius: 5px;
+    color:hsl(183, 45%, 18%)
+}
+
+.tables,
+.selectors {
+    width: 75%;
+    margin: auto;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    border: 3px solid hsl(183, 45%, 18%);
+    border-collapse: collapse;
+    padding: 0;
+    color:hsl(183, 45%, 18%);
+    background-color: hsl(183, 45%, 53%);
+}
+
+td {
+    border: 2px solid hsl(183, 45%, 20%);
+    padding: 2%;
+}
+
+thead th {
+    font-weight: bold;
+    border: 3px solid hsl(183, 45%, 18%);
+    padding: 2px;
+    background-color: hsla(183, 45%, 20%, 0.5);
+    color: hsl(63, 45%, 53%);
+}
+
+th {
+    font-weight: bold;
+    border: 3px solid hsl(183, 45%, 18%);
+    padding: 2px;
+    background-color: hsla(183, 45%, 20%, 0.5);
+    font-weight: bold;
+}
+
+.tables thead th:nth-child(1) {
+    width: 10%;
+}
+
+.tables thead th:nth-child(2) {
+    width: 15%;
+}
+
+.tables thead th:nth-child(3) {
+    width: 65%;
+}
+
+.selectors thead th:nth-child(1) {
+    width: 15%;
+}
+
+.selectors thead th:nth-child(2) {
+    width: 29%;
+}
+
+.selectors thead th:nth-child(3) {
+    width: 18%;
+}
+
+selectors thead th:nth-child(4) {
+    width: 29%;
+}
+
+tbody tr:nth-child(odd) :not(th, .example, .syntax, .highlight) {
+    background-color: hsl(63, 45%, 60%);
+}
+
+tbody tr:nth-child(even) :not(th, .example, .syntax, .highlight) {
+    background-color: hsl(183, 45%, 53%);
+}
