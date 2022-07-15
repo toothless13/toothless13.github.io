@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS Cheat Sheet</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Page heading -->
+    <header>
+      <h1>HTML & CSS Cheat Sheet</h1>
+    </header>
+    
+    <main>
+        <div class="heading">
+            <h2>HTML Elements</h2>
+        </div>
+
+        <!-- HTML Tables Section -->
+        <div>
+            <h3 class="sub-heading">HTML Tables</h3>
+        </div>
+
+        <div class="tables table">
+            <!-- Include info on how to create a table using HTML -->
+            <!-- Use the tags in each section of the table to show how a table should be created and laid out -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tag</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <th class>&lt;table&gt;</th>
+                        <td>Table</td>
+                        <td>The wrapper element for all HTML tables.</td>
+                    </tr>
+                    <tr>
+                        <th>&lt;thead&gt;</th>
+                        <td>Table Head</td>
+                        <td>The set of rows defining the column headers in a table.</td>
+                    </tr>
+                    <tr>
+                        <th>&lt;tbody&gt;</th>
+                        <td>Table Body</td>
+                        <td>The set of rows containing actual table data.</td>
+                    </tr>
+                    <tr>
+                        <th>&lt;tr&gt;</th>
+                        <td>Table Row</td>
+                        <td>The table row container.</td>
+                    </tr>
+                    <tr>
+                        <th>&lt;td&gt;</th>
+                        <td>Table Data</td>
+                        <td>The table data container.</td>
+                    </tr>
+                    <tr>
+                        <th>&lt;tfoot&gt;</th>
+                        <td>Table Foot</td>
+                        <td>The set of rows defining the footer in a table.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+        
+        
+        
+        
+        <div>
+            <h2 class="heading">CSS Selectors & Properties</h2>
+        </div>
+
+        <!-- CSS Selectors Section -->
+        <div>
+            <h3 class="sub-heading">CSS Selectors</h3>
+        </div>
+
+        <div>
+            <h4 class="sub-heading">Basic Selectors</h4>
+        </div>
+
+        <div class="selectors table">
+            <!-- Include tables with left hand side showing a selector and right explaining what they do -->
+            <!-- Could maybe also explain and give examples of syntax -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Selector</th>
+                        <th>Description</th>
+                        <th>Syntax</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <th>Universal</th>
+                        <td>Selects all elements. Optionally, it may be restricted to a specific namespace or to all namespaces.</td>
+                        <td><span class="syntax">*</span> <span class="syntax">ns|*</span> <span class="syntax">*|*</span></td>
+                        <td><span class="example">*</span> will match all the elements of the document.</td>
+                    </tr>
+                    <tr>
+                        <th>Type</th>
+                        <td>Selects all elements that have the given node name.</td>
+                        <td><span class="syntax">elementname</span></td>
+                        <td><span class="example">h1</span> will match any <span class="highlight">&lt;h1&gt;</span> element.</td>
+                    </tr>
+                    <tr>
+                        <th>Class</th>
+                        <td>Selects all elements that have the given <span class="highlight">class</span> attribute.</td>
+                        <td><span class="syntax">.classname</span></td>
+                        <td><span class="example">.example</span> will match any element that has a class of "example".</td>
+                    </tr>
+                    <tr>
+                        <th>ID</th>
+                        <td>Selects an element based on the value of its <span class="highlight">id</span> attribute. There should be only one element with a given ID in a document.</td>
+                        <td><span class="syntax">#idname</span></td>
+                        <td><span class="example">#headline</span> will match the element that has the ID "headline".</td>
+                    </tr>
+                    <tr>
+                        <th>Attribute</th>
+                        <td>Selects all elements that have the given attribute.</td>
+                        <td><span class="syntax">[attr]</span> <span class="syntax">[attr=value]</span> <span class="syntax">[attr~=value]</span> <span class="syntax">[attr|=value]</span> <span class="syntax">[attr^=value]</span> <span class="syntax">[attr$=value]</span> <span class="syntax">[attr*=value]</span></td>
+                        <td><span class="example">[autoplay]</span> will match all elements that have the <span class="highlight">autoplay</span> attribute set (to any value).</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+        <div>
+            <h4 class="sub-heading">Grouping Selectors</h4>
+        </div>
+
+        <div class="selectors table">
+            <table>
+               <thead>
+                 <tr>
+                    <th>Selector</th>
+                    <th>Description</th>
+                    <th>Syntax</th>
+                    <th>Example</th>
+                 </tr>
+               </thead>
+
+               <tbody>
+                    <tr>
+                        <th>Selector List</th>
+                        <td>The <span class="highlight">,</span> selector is a grouping method that selects all the matching nodes.</td>
+                        <td><span class="syntax">A, B</span></td>
+                        <td><span class="example">div, span</span> will match both <span class="highlight">&lt;span&gt;</span> and <span class="highlight">&lt;div&gt;</span> elements.</td>
+                    </tr>                
+               </tbody>
+            </table>
+        </div>
+
+        <div>
+            <h4 class="sub-heading">Combinators</h4>
+        </div>
+
+        <div class="selectors table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Selector</th>
+                        <th>Description</th>
+                        <th>Syntax</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <th>Descendant Combinator</th>
+                        <td>The " " combinator selects nodes that are descendants of the first element.</td>
+                        <td><span class="syntax">A B</span></td>
+                        <td><span class="example">div span</span> will match all <span class="highlight">&lt;span&gt;</span> elements that are inside a <span class="highlight">&lt;div&gt;</span> element.</td>
+                    </tr>
+                    <tr>
+                        <th>Child Combinator</th>
+                        <td>The <span class="highlight">></span> combinator selects nodes that are direct children of the first element.</td>
+                        <td><span class="syntax">A > B</span></td>
+                        <td><span class="example">ul > li</span> will match all <span class="highlight">&lt;li&gt;</span> elements that are nested directly inside a <span class="highlight">&lt;ul&gt;</span> element.</td>
+                    </tr>
+                    <tr>
+                        <th>General Sibling Combinator</th>
+                        <td>The <span class="highlight">~</span> combinator selects siblings. This means that the second element follows the first (though not necessarily immediately), and both share the same parent.</td>
+                        <td><span class="syntax">A ~ B</span></td>
+                        <td><span class="example">p ~ span</span> will match all <span class="highlight">&lt;span&gt;</span> elements that follow a <span class="highlight">&lt;p&gt;</span>, immediately or not.</td>
+                    </tr>
+                    <tr>
+                        <th>Adjacent Sibling Combinator</th>
+                        <td>The <span class="highlight">+</span> combinator matches the second element only if it <em>immediately</em> follows the first element.</td>
+                        <td><span class="syntax">A + B</span></td>
+                        <td><span class="example">h2 + p</span> will match the first <span class="highlight">&lt;p&gt;</span> element that <em>immediately</em> follows an <span class="highlight">&lt;h2&gt;</span> element.</td>
+                    </tr>
+                    <tr>
+                        <th>Column Combinator</th>
+                        <td>The <span class="highlight">||</span> combinator selects nodes which belong to a column.</td>
+                        <td><span class="syntax">A || B</span></td>
+                        <td><span class="example">col || td</span> will match all <span class="highlight">&lt;td&gt;</span> elements that belong to the scope of the <span class="highlight">&lt;col&gt;</span>.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div>
+            <h4 class="sub-heading">Pseudo</h4>
+        </div>
+
+        <div class="selectors table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Selector</th>
+                        <th>Description</th>
+                        <th>Syntax</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <th>Pseudo Classes</th>
+                        <td>The <span class="highlight">:</span> psuedo allows the selection of elements based on state information that is not contained in the document tree.</td>
+                        <td><span class="syntax">element:state</span></td>
+                        <td><span class="example">a:visited</span> will match all <span class="highlight">&lt;a&gt;</span> elements that have been visited by the user.</td>
+                    </tr>
+                    <tr>
+                        <th>Pseudo Elements</th>
+                        <td>The <span class="highlight">::</span> pseudo represents entities that are not included in HTML.</td>
+                        <td><span class="syntax">element::entity</span></td>
+                        <td><span class="example">p::first-line</span> will match the first line of all <span class="highlight">&lt;p&gt;</span> elements.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </main>
+</body>
+</html>
